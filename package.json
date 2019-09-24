@@ -5,7 +5,6 @@
   "description": "Build desktop apps with system webview and native controls",
   "scripts": {
     "start": "node scripts/run.js",
-    "buildapp": "parcel build ./rendersrc/index.html -d ./app/ --no-source-maps",
     "install": "npm run download && npm run bootstrap && npm run build",
     "download": "node scripts/download_libyue.js v0.6.1",
     "bootstrap": "node scripts/bootstrap.js",
@@ -14,25 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/turtle89431/html2exe.git"
+    "url": "https://github.com/yue/muban.git"
   },
   "license": "public domain",
-  "parcelCleanPaths": [
-    "app/*.*"
-  ],
-  "dependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
-  },
   "devDependencies": {
     "asar": "0.14.x",
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
     "cmake-binaries": "1.0.5-2",
     "download-yue": "2.x",
-    "parcel-bundler": "^1.12.3",
-    "parcel-plugin-clean-easy": "^1.0.2",
     "yazl": "2.4.3"
   }
 }
